@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+       <header>
+        <a href="#" class="logo">Avengers</a>
+        <ul>
+            <li><a href="#Home"> Home </a></li>
+            <li><a href="#characters"> Characters </a></li>
+            <li><a href="#photos"> Photos </a></li>
+        </ul>
+       </header> 
+       
+       <!-- المحتوى الرئيسي -->
+       <div class="content">
+           <h2>Avengers</h2>
+           <p>The Avengers are a team of superheroes appearing in comic books published by Marvel Comics. They were created by writer Stan Lee and artist Jack Kirby and first appeared in "The Avengers" #1 in 1963. The original team consisted of Iron Man, Thor, Hulk, Ant-Man, and Wasp, with Captain America joining soon after. The team is known for its motto, "Earth's Mightiest Heroes," and their mission to combat threats too powerful for any single hero to handle.</p>
+           <button id="seeMoreButton">See more</button>
+       </div>
+
+       <!-- قسم الشخصيات -->
+       <section id="characters" class="characters-section">
+           <h2>Avengers Characters</h2>
+           <div class="character">
+               <img src="ironman.png.webp" alt="Iron Man">
+               <h3>Iron Man</h3>
+               <p>Tony Stark, the genius billionaire and founder of the Avengers.</p>
+           </div>
+           <div class="character">
+               <img src="captain.png.webp" alt="Captain America">
+               <h3>Captain America</h3>
+               <p>Steve Rogers, the super soldier and leader of the Avengers.</p>
+           </div>
+           <div class="character">
+               <img src="thor.png.webp" alt="Thor">
+               <h3>Thor</h3>
+               <p>Thor Odinson, the Asgardian hero of thunder.</p>
+           </div>
+           <div class="character">
+               <img src="hulk.png.webp" alt="Hulk">
+               <h3>Hulk</h3>
+               <p>Bruce Banner, a brilliant scientist with the ability to transform into the Hulk.</p>
+           </div>
+           <div class="character">
+               <img src="spide.png.webp" alt="spider">
+               <h3>SpiderMan</h3>
+               <p>He is known for swinging from building to building using webs.</p>
+           </div>
+           <div class="character">
+               <img src="doc.png.webp" alt="doctor">
+               <h3>Doctor Strange</h3>
+               <p>He was a brilliant neurosurgeon before becoming a sorcerer.</p>
+           </div>
+           <div class="character" id="groot">
+               <h3>Groot</h3>
+               <img src="groot.png.webp" alt="Groot">
+               <p>Groot is a tree-like creature and a member of the Guardians of the Galaxy.</p>
+           </div>
+       </section>
+
+       <!-- قسم الصور -->
+       <section id="photos" class="photos-section">
+           <h2>Photos</h2>
+           <div class="photo-gallery">
+               <button class="arrow left-arrow" onclick="previousPhoto()">&#10094;</button>
+               <div class="photo-container">
+                   <img src="kk.jpg.jpg" alt="Photo 1" class="photo">
+                   <img src="tt.jpg.jpg" alt="Photo 1" class="photo">
+                   <img src="ss.jpg.jpg" alt="Photo 1" class="photo">
+                   <img src="ll.jpg.jpg" alt="Photo 1" class="photo">
+                   <img src="uu.jpg.jpg" alt="Photo 1" class="photo">
+                   <img src="nn.jpg.jpg" alt="Photo 1" class="photo">
+                   <img src="ff.jpg.jpg" alt="Photo 1" class="photo">
+               </div>
+               <button class="arrow right-arrow" onclick="nextPhoto()">&#10095;</button>
+           </div>
+       </section>
+    </div>
+</body>
+</html>
